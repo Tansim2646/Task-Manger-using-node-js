@@ -1,1 +1,1 @@
-[{"id":1,"task":"Bring Medicine For Dad","complete":false},{"id":2,"task":"Learn Express.js","complete":false},{"id":3,"task":"Dummy Task","complete":false},{"id":4,"task":"University class Tomorrow","complete":false}]
+[{"id":1,"task":"Class Tomorrow","date":"21st November,2023","complete":false},{"id":2,"task":"Pre registration Summer 2024","date":"29th November,2023","complete":false},{"id":3,"task":"Electricity bill payment","date":"27th November,2023","complete":false}]

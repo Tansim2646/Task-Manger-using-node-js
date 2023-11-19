@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css")
+    title Task Manager
+  body.container
+    header
+      h1 Task Manager
+      p This is a simple task manager build using Node.js, Express.js, Pug.js. This is a tutorial project for mastering server side rendering. Enjoy
+      hr
+    main
+      h2 All tasks
+      table
+        tr
+          th
+          th ID
+          th Task
+          th Date
+          th Action
+        each d in taskData
+          tr
+            td
+              input(type="checkbox" name="selected" id="selected")
+            td #{d.id}
+            td #{d.task}
+            td hello
+            td
+              a(href="#") Delete | 
+              a(href="#") Mark as Completed
+      h2 Add Task
+      form(action="/" method="post")
+        label(for="task") Task:
+        input(type="text" name="task" id="task")
+        label(for="date") Date:
+        input(type="date" name="date" id="date")
+        button(type="submit") Submit

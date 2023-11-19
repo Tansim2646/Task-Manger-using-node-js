@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Miligram Css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <title>Task Manager</title>
+</head>
+
+<body class="container">
+    <header>
+        <h1>Task Manager</h1>
+        <p>This is a simple task manager build using Node.js,Express.js,Pug.js.This is a tutorial project for mastering server side rendering.Enjoy</p>
+        <hr>
+    </header>
+    <main>
+        <h2>All Tasks</h2>
+        <table>
+            <tr>    
+                <th></th>
+                <th>ID</th>
+                <th>Task</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="selected" id="selected">
+                </td>
+                <td>1</td>
+                <td>Bring Medicine for Dada</td>
+                <td>18th May,2023</td>
+                <td><a href="#">Delete</a> | <a href="#">Mark as completed</a></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="selected" id="selected">
+                </td>
+                <td>2</td>
+                <td>Dummy Yask</td>
+                <td>29th May,2023</td>
+                <td><a href="#">Delete</a> | <a href="#">Mark as completed</a></td>
+            </tr>
+        </table>
+        ...
+        <h2>Add task</h2>
+        <form action="#" method="post">
+            <label for="task">Task</label>
+            <input type="text" name="task" id="task">
+            <label for="date"></label>
+            <input type="date" name="date" id="date">
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
